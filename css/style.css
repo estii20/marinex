@@ -19,7 +19,9 @@ h3 {
 /* Navbar */
 
 .navbar {
-    background-color: #cbdceb;
+    background-color: #e0eafa;
+    z-index: 1;
+    position: relative;
 }
 
 .nav-link, .navbar-brand {
@@ -60,11 +62,11 @@ h3 {
 }
 
 .dropdown-menu .dropdown-item {
-    color: #ffffff; /* Light text for dark backgrounds */
+    color: #ffffff; 
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: #608bc1; /* Lighten the hover effect */
+    background-color: #608bc1; 
     color: #133e87;
 }
 
@@ -88,4 +90,73 @@ h3 {
     color: #ffffff;
 }
 
+.logo {
+    max-width: 180px;
+    border: 1px solid #00aaff;
+    border-radius: 10px;
+}
+
+/* Hero Image */
+
+.hero-image {
+    background-image: url("../images/hero2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 60vh; 
+    margin: 0;     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+}
+
+.hero-text p {
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.hero-text p:hover {
+    transform: scale(1.05); 
+}
+
+  
+.hero-text button {
+    border: none;
+    outline: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(135deg, #133e87, #00aaff);
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.hero-text button:hover {
+    background: linear-gradient(135deg, #00aaff, #00ccff);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.hero-text button:active {
+    transform: translateY(1px);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
 
