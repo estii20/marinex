@@ -226,8 +226,8 @@ h3 {
 /* Learn More Link Styling */
 .learn-more-link {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
   padding: 0.5rem 1rem;
   background-color: #00aaff;
   color: #ffffff;
@@ -245,7 +245,7 @@ h3 {
 /* Contact Section */
 #contact {
   background-color: #608BC1 !important; 
-  padding: 60px 0;
+  padding: 10px 0;
 }
 
 .contact-section {
@@ -326,7 +326,7 @@ h3 {
 
 .faq-section {
   background-color: #cbdceb !important;
-  padding: 60px 0;
+  padding: 10px 0;
   color: #333;
 }
 
@@ -370,7 +370,7 @@ h3 {
 }
 
 /* Footer Styling */
-.footer {
+footer.footer {
   background: #0a3d62;
   color: #d2e3f0;
   padding: 2rem 1rem;
