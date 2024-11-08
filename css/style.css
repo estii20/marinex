@@ -424,13 +424,6 @@ h3 {
 .footer-social a {
   margin-right: 0.5rem;
   display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-/* Footer Social Icons */
-.footer-social a {
-  margin-right: 0.5rem;
-  display: inline-block;
   color: #d2e3f0; 
   font-size: 1.5rem; 
   transition: transform 0.3s ease;
@@ -438,10 +431,6 @@ h3 {
 
 .footer-social a:hover {
   color: #00aaff; 
-  transform: scale(1.1);
-}
-
-.footer-social a:hover {
   transform: scale(1.1);
 }
 
@@ -453,6 +442,4 @@ h3 {
   border-top: 1px solid #cfd8e3;
   margin-top: 1.5rem;
 }
-
-
   
