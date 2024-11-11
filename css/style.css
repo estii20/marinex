@@ -160,7 +160,7 @@ h3 {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Services Section */
+/* What We Do Section - Services Section Styling */
 .services-section {
   padding: 3rem 1rem;
   text-align: center;
@@ -176,6 +176,15 @@ h3 {
   letter-spacing: 1px;
 }
 
+/* Services Grid Layout */
+.services-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive column layout */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .service-item {
   background-color: #6aaedf; 
   border-radius: 10px;
@@ -183,10 +192,11 @@ h3 {
   position: relative;
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 300px; 
+  transition: transform 0.3s ease;
 }
 
 .service-item:hover {
@@ -194,6 +204,18 @@ h3 {
 }
 
 /* Image Overlay */
+.image-overlay {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
 .image-overlay::after {
   content: '';
   position: absolute;
@@ -225,9 +247,7 @@ h3 {
 
 /* Learn More Link Styling */
 .learn-more-link {
-  position: absolute;
-  bottom: 0.5rem;
-  right: 0.5rem;
+  align-self: end;
   padding: 0.5rem 1rem;
   background-color: #00aaff;
   color: #ffffff;
@@ -235,12 +255,12 @@ h3 {
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s;
+  margin-top: auto;
 }
 
 .learn-more-link:hover {
   background-color: #0091e0;
 }
-
 
 /* Contact Section */
 #contact {
