@@ -22,13 +22,14 @@
         <a class="navbar-brand" href="index.html">
           <img src="images/marinex_logo.png" class="img-fluid logo" alt="Marinex Logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i></a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#our-services">Services</a>
@@ -38,25 +39,30 @@
                         data-bs-toggle="dropdown" aria-expanded="false">
                         What We Do</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#our-services">Engineering Solutions</a></li>
-                        <li><a class="dropdown-item" href="#our-services">Custom Design</a></li>
-                        <li><a class="dropdown-item" href="#our-services">Marine Consultancy</a></li>
-                        <li><a class="dropdown-item" href="#our-services">Environmental Impact</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#what-we-do" role="button" 
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                What We Do</a>
+                                <li><hr class="dropdown-divider"></li>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="engineering-consulting.html">Engineering Solutions</a></li>
+                                <li><a class="dropdown-item" href="design-analysis.html">Custom Design</a></li>
+                                <li><a class="dropdown-item" href="engineering-consulting.html">Marine Consultancy</a></li>
+                                <li><a class="dropdown-item" href="environmental-sustainability.html">Environmental Impact</a></li>
+                            </ul>
+                        </li>
                         <li><a class="dropdown-item" href="#faq">FAQs</a></li>
                     </ul>
-                </li>
-            </ul>
-            <form id="search-form" class="d-flex" role="search">
-                <input id="search-input" class="form-control me-2" type="search" placeholder="Search" 
-                    aria-label="Search" autocomplete="off">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                <div id="dropdown-results" class="dropdown-results"></div>
-            </form>              
-            <div id="search-results"></div>            
-        </div>
-    </div>
-  </nav>
+                    <form id="search-form" class="d-flex" role="search">
+                        <input id="search-input" class="form-control me-2" type="search" placeholder="Search" 
+                            aria-label="Search" autocomplete="off">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <div id="dropdown-results" class="dropdown-results"></div>
+                    </form>              
+                    <div id="search-results"></div>            
+                </div>
+            </div>
+        </nav>
 
   <!-- Hero Image -->
   <div class="hero-image">
@@ -64,7 +70,7 @@
           <h1 style="font-size:50px">MarineX</h1>
           <p>Inspiring Engineering Solutions</p>
           <button><a href="#contact" style="text-decoration:none; color:white; font-weight: bold;">
-            Contact Us</button></a></button>
+            Contact Us</button></a>
       </div>
   </div>
 
@@ -77,25 +83,29 @@
             <div class="icon-container">
                 <i class="fas fa-cogs"></i> 
             </div>
-            <h3>Engineering Solutions</h3>
+            <h3 style="text-decoration:none;">
+                <a href="engineering-consulting.html">Engineering Solutions</a></h3>
         </div>
         <div id="design-analysis" class="our-service-item searchable" data-title="Design & Analysis">
             <div class="icon-container">
                 <i class="fas fa-drafting-compass"></i> 
             </div>
-            <h3>Custom Design</h3>
+            <h3 style="text-decoration:none;">
+                <a href="design-analysis.html"><h3>Custom Design</a></h3>
         </div>
         <div id="marine-consultancy" class="our-service-item searchable" data-title="Marine Consultancy">
             <div class="icon-container">
                 <i class="fas fa-anchor"></i> 
             </div>
-            <h3>Marine Consultancy</h3>
+            <h3 style="text-decoration:none;">
+                <a href="cruise-ship-consulting.html"><h3>Marine Consultancy</a></h3>
         </div>
         <div id="environmental-sustainability" class="our-service-item searchable" data-title="Environmental Sustainability">
             <div class="icon-container">
                 <i class="fas fa-leaf"></i> 
             </div>
-            <h3>Environmental Impact</h3>
+            <h3 style="text-decoration:none;">
+                <a href="environmental-sustainability.html">Environmental Impact</a></h3>
         </div>
     </div>
   </section>
@@ -107,35 +117,35 @@
         <!-- What We Do Item -->
         <div id="engineering-consultancy" class="what-we-do-item searchable" data-title="Engineering Consultancy">
             <div class="image-overlay">
-                <img src="images/engineering.jpeg" alt="Engineering Consulting Icon">
+                <img src="images/engineering.jpeg" alt="Engineering Consulting Image">
             </div>
             <h3>Engineering Consulting</h3>
             <p>Providing expert engineering solutions for offshore, marine, and coastal projects.</p>
-            <a href="/engineering-consulting" class="learn-more-link">Learn More</a>
+            <a href="engineering-consulting.html" class="learn-more-link">Learn More</a>
         </div>
         <div id="design-analysis" class="what-we-do-item searchable" data-title="Design and Analysis">
             <div class="image-overlay">
-                <img src="images/design.jpg" alt="Design and Analysis Icon">
+                <img src="images/design.jpg" alt="Design and Analysis Image">
             </div>
             <h3>Design & Analysis</h3>
             <p>Detailed design, structural analysis, and innovative solutions for your vessel needs.</p>
-            <a href="/design-analysis" class="learn-more-link">Learn More</a>
+            <a href="design-analysis.html" class="learn-more-link">Learn More</a>
         </div>
         <div id="cruise-ship-consulting" class="what-we-do-item searchable" data-title="Cruise Ship Consulting">
             <div class="image-overlay">
-                <img src="images/cruise_ship.jpeg" alt="Cruise Ship Consulting Icon">
+                <img src="images/cruise_ship.jpeg" alt="Cruise Ship Consulting Image">
             </div>
             <h3>Cruise Ship Consulting</h3>
             <p>Specialised consulting for cruise ship engineering, compliance, and optimisation.</p>
-            <a href="/cruise-ship-consulting" class="learn-more-link">Learn More</a>
+            <a href="cruise-ship-consulting.html" class="learn-more-link">Learn More</a>
         </div>
         <div id="environmental-sustainability" class="what-we-do-item searchable" data-title="Environmantal Sustainability">
             <div class="image-overlay">
-                <img src="images/wind.jpg" alt="Environmental Sustainability Icon">
+                <img src="images/wind.jpg" alt="Environmental Sustainability Image">
             </div>
             <h3>Environmental Sustainability</h3>
             <p>Sustainable practices and impact assessments for environmentally friendly projects.</p>
-            <a href="/environmental-sustainability" class="learn-more-link">Learn More</a>
+            <a href="environmental-sustainability.html" class="learn-more-link">Learn More</a>
         </div>
     </div>
   </section>
