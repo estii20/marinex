@@ -16,30 +16,28 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="images/marinex_logo.png" class="img-fluid logo" alt="Marinex Logo"></a>
+            <img src="images/marinex_logo.png" class="img-fluid logo" alt="Marinex Logo">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
-            aria-label="Toggle navigation">
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html"></a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#our-services">Services</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#what-we-do" role="button" 
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        What We Do</a>
-                        <li><hr class="dropdown-divider"></li>
+                       data-bs-toggle="dropdown" aria-expanded="false">What We Do</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="engineering-consulting.html">Engineering Solutions</a></li>
                         <li><a class="dropdown-item" href="design-analysis.html">Custom Design</a></li>
@@ -53,11 +51,11 @@
                     aria-label="Search" autocomplete="off">
                 <button class="btn btn-outline-success" type="submit">Search</button>
                 <div id="dropdown-results" class="dropdown-results"></div>
-            </form>              
-            <div id="search-results"></div>            
+            </form>
         </div>
     </div>
   </nav>
+  
 
   <!-- Hero Image -->
   <div class="hero-image">
@@ -69,26 +67,63 @@
       </div>
   </div>
 
-    <!-- What We Do Section -->
-    <section id="what-we-do" class="what-we-do-section">
-        <h2 class="section-title">What We Do</h2>
-        <div class="what-we-do-grid">
+  <!-- Services Section -->
+  <section id="our-services" class="our-services-section">
+    <h2 class="section-title">Our Services</h2>
+    <div class="our-services-grid">
+        <!-- Service Item -->
+        <div id="engineering-consulting" class="our-service-item searchable" data-title="Engineering Consulting">
+            <div class="icon-container">
+                <i class="fas fa-cogs"></i> 
+            </div>
+            <h3 style="text-decoration:none;">
+                <a href="engineering-consulting.html">Engineering Solutions</a></h3>
+        </div>
+        <div id="design-analysis" class="our-service-item searchable" data-title="Design & Analysis">
+            <div class="icon-container">
+                <i class="fas fa-drafting-compass"></i> 
+            </div>
+            <h3 style="text-decoration:none;">
+                <a href="design-analysis.html"><h3>Custom Design</a></h3>
+        </div>
+        <div id="marine-consultancy" class="our-service-item searchable" data-title="Marine Consultancy">
+            <div class="icon-container">
+                <i class="fas fa-anchor"></i> 
+            </div>
+            <h3 style="text-decoration:none;">
+                <a href="cruise-ship-consulting.html"><h3>Marine Consultancy</a></h3>
+        </div>
+        <div id="environmental-sustainability" class="our-service-item searchable" data-title="Environmental Sustainability">
+            <div class="icon-container">
+                <i class="fas fa-leaf"></i> 
+            </div>
+            <h3 style="text-decoration:none;">
+                <a href="environmental-sustainability.html">Environmental Impact</a></h3>
+        </div>
+    </div>
+  </section>
+
+  <!-- Cruise Ship & Marine Consulting Section -->
+    <section id="cruise-marine-consulting" class="cruise-consulting-section">
+        <h2 class="cruise-section-title">Cruise Ship & Marine Consulting</h2>
+        <div class="cruise-consulting-grid">
             <!-- Cruise Ship Consulting Item Only -->
-            <div id="cruise-ship-consulting" class="what-we-do-item searchable" data-title="Cruise Ship Consulting">
-                <div class="image-overlay">
-                    <img src="images/cruise_ship.jpeg" alt="Cruise Ship Consulting Image" style="max-height: 300px; max-width: 400px;">
+            <div id="marine-consulting-item" class="marine-consulting-item searchable" data-title="Cruise Ship Consulting">
+                <div class="cruise-image-overlay">
+                    <img src="images/cruise_ship.jpeg" alt="Cruise Ship Consulting Image" class="cruise-image">
                 </div>
-                <h3>Cruise Ship Consulting</h3>
-                <p style="text-align: justify;">Specialised consulting for cruise ship engineering, compliance, and optimisation. 
-                    Every project is unique, and so are our solutions. We collaborate closely with you to understand your needs, 
-                    delivering custom engineering solutions that solve complex challenges, enhance performance, 
-                    and support the long-term goals of your project.</p>
-                <p style="text-align: justify;">With years of experience in the industry, we’re more than just consultants—we’re partners in your success. 
-                    Our client-centered approach, technical rigor, and focus on sustainable solutions set us apart 
-                    in the engineering consultancy landscape. We are committed to delivering value at every stage, 
-                    ensuring your project’s goals are achieved with excellence.
-                <p style="text-align: justify;">Let’s bring your vision to life. Get in touch today to learn more about how our 
-                    engineering consultancy services can support your next project.</p>
+                <div class="cruise-content">
+                    <p><strong>Specialised Solutions:</strong> Consulting for cruise ship engineering, compliance, 
+                        and optimization. Every project is unique, and so are our solutions. We collaborate closely 
+                        with you to understand your needs, delivering custom engineering solutions that solve 
+                        complex challenges, enhance performance, and support long-term goals.</p>
+                    <p>With years of industry experience, we’re more than just consultants—we’re partners in your success. 
+                        Our client-centered approach, technical rigor, and focus on sustainability set us apart 
+                        in the engineering consultancy landscape. We deliver value at every stage, ensuring your 
+                        project’s goals are met with excellence.</p>
+                    <p><strong>Let’s bring your vision to life.</strong> Get in touch today to learn more about 
+                        how our engineering consultancy services can support your next project.</p>
+                </div>
             </div>
         </div>
     </section>

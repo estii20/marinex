@@ -16,29 +16,28 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="images/marinex_logo.png" class="img-fluid logo" alt="Marinex Logo"></a>
+            <img src="images/marinex_logo.png" class="img-fluid logo" alt="Marinex Logo">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
-            aria-label="Toggle navigation">
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html"></a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#our-services">Services</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#what-we-do" role="button" 
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        What We Do</a>
-                        <li><hr class="dropdown-divider"></li>
+                       data-bs-toggle="dropdown" aria-expanded="false">What We Do</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="engineering-consulting.html">Engineering Solutions</a></li>
                         <li><a class="dropdown-item" href="design-analysis.html">Custom Design</a></li>
@@ -52,11 +51,11 @@
                     aria-label="Search" autocomplete="off">
                 <button class="btn btn-outline-success" type="submit">Search</button>
                 <div id="dropdown-results" class="dropdown-results"></div>
-            </form>              
-            <div id="search-results"></div>            
+            </form>
         </div>
     </div>
   </nav>
+  
 
   <!-- Hero Image -->
   <div class="hero-image">
@@ -68,24 +67,62 @@
       </div>
   </div>
 
-    <!-- What We Do Section -->
-    <section id="what-we-do" class="what-we-do-section">
-        <h2 class="section-title">What We Do</h2>
-        <div class="what-we-do-grid">
+  <!-- Services Section -->
+  <section id="our-services" class="our-services-section">
+    <h2 class="section-title">Our Services</h2>
+    <div class="our-services-grid">
+        <!-- Service Item -->
+        <div id="engineering-consulting" class="our-service-item searchable" data-title="Engineering Consulting">
+            <div class="icon-container">
+                <i class="fas fa-cogs"></i> 
+            </div>
+            <h3 style="text-decoration:none;">
+                <a href="engineering-consulting.html">Engineering Solutions</a></h3>
+        </div>
+        <div id="design-analysis" class="our-service-item searchable" data-title="Design & Analysis">
+            <div class="icon-container">
+                <i class="fas fa-drafting-compass"></i> 
+            </div>
+            <h3 style="text-decoration:none;">
+                <a href="design-analysis.html"><h3>Custom Design</a></h3>
+        </div>
+        <div id="marine-consultancy" class="our-service-item searchable" data-title="Marine Consultancy">
+            <div class="icon-container">
+                <i class="fas fa-anchor"></i> 
+            </div>
+            <h3 style="text-decoration:none;">
+                <a href="cruise-ship-consulting.html"><h3>Marine Consultancy</a></h3>
+        </div>
+        <div id="environmental-sustainability" class="our-service-item searchable" data-title="Environmental Sustainability">
+            <div class="icon-container">
+                <i class="fas fa-leaf"></i> 
+            </div>
+            <h3 style="text-decoration:none;">
+                <a href="environmental-sustainability.html">Environmental Impact</a></h3>
+        </div>
+    </div>
+  </section>
+
+    <!-- Engineering Consulting Section -->
+    <section id="engineering-consulting" class="engineering-consulting-section">
+        <h2 class="engineering-section-title">Engineering Consulting</h2>
+        <div class="engineering-consulting-grid">
             <!-- Engineering Consulting Item Only -->
-            <div id="engineering-consultancy" class="what-we-do-item searchable" data-title="Engineering Consultancy">
-                <div class="image-overlay">
-                    <img src="images/engineering.jpeg" alt="Engineering Consulting Image" style="max-height: 300px; max-width: 400px;">
+            <div id="consulting-item" class="consulting-item searchable" data-title="Engineering Consultancy">
+                <div class="engineering-image-overlay">
+                    <img src="images/engineering.jpeg" alt="Engineering Consulting Image" class="engineering-image">
                 </div>
-                <h3>Engineering Consulting</h3>
-                <p style="text-align: justify;">Providing expert engineering solutions for offshore, marine, and coastal projects. 
-                    From concept to execution, we offer comprehensive project management services that guide you 
-                    through each phase. Our team is skilled at planning, scheduling, and managing resources to 
-                    ensure your project is on track, within budget, and compliant with all regulatory standards.
-                    Marine operations come with inherent risks, and our team works to minimise these through 
-                    rigorous safety assessments, risk management strategies, and engineering solutions tailored 
-                    for the marine environment. From vessel design to safety protocols, we bring technical expertise 
-                    to support your marine projects.</p>
+                <div class="engineering-content">
+                    <p><strong>Our Expertise:</strong> Providing expert engineering solutions for offshore, marine, 
+                        and coastal projects. From concept to execution, we offer comprehensive project management 
+                        services to guide you through each phase.</p>
+                    <h3>Project Management</h3>
+                    <p>Our team excels in planning, scheduling, and managing resources to ensure your project remains 
+                        on track, within budget, and compliant with all regulatory standards.</p>
+                    <h3>Risk Management & Safety</h3>
+                    <p>Marine operations carry inherent risks. We minimize these through thorough safety assessments, 
+                        risk management strategies, and engineering solutions tailored for marine environments.</p>
+                </div>
             </div>
         </div>
     </section>
