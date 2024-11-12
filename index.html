@@ -47,10 +47,13 @@
                     </ul>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <form id="search-form" class="d-flex" role="search">
+                <input id="search-input" class="form-control me-2" type="search" placeholder="Search" 
+                    aria-label="Search" autocomplete="off">
                 <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+                <div id="dropdown-results" class="dropdown-results"></div>
+            </form>              
+            <div id="search-results"></div>            
         </div>
     </div>
   </nav>
@@ -70,25 +73,25 @@
     <h2 class="section-title">Our Services</h2>
     <div class="our-services-grid">
         <!-- Service Item -->
-        <div class="our-service-item">
+        <div id="engineering-consulting" class="our-service-item searchable" data-title="Engineering Consulting">
             <div class="icon-container">
                 <i class="fas fa-cogs"></i> 
             </div>
             <h3>Engineering Solutions</h3>
         </div>
-        <div class="our-service-item">
+        <div id="design-analysis" class="our-service-item searchable" data-title="Design & Analysis">
             <div class="icon-container">
                 <i class="fas fa-drafting-compass"></i> 
             </div>
             <h3>Custom Design</h3>
         </div>
-        <div class="our-service-item">
+        <div id="marine-consultancy" class="our-service-item searchable" data-title="Marine Consultancy">
             <div class="icon-container">
                 <i class="fas fa-anchor"></i> 
             </div>
             <h3>Marine Consultancy</h3>
         </div>
-        <div class="our-service-item">
+        <div id="environmental-sustainability" class="our-service-item searchable" data-title="Environmental Sustainability">
             <div class="icon-container">
                 <i class="fas fa-leaf"></i> 
             </div>
@@ -102,7 +105,7 @@
     <h2 class="section-title">What We Do</h2>
     <div class="what-we-do-grid">
         <!-- What We Do Item -->
-        <div class="what-we-do-item">
+        <div id="engineering-consultancy" class="what-we-do-item searchable" data-title="Engineering Consultancy">
             <div class="image-overlay">
                 <img src="images/engineering.jpeg" alt="Engineering Consulting Icon">
             </div>
@@ -110,7 +113,7 @@
             <p>Providing expert engineering solutions for offshore, marine, and coastal projects.</p>
             <a href="/engineering-consulting" class="learn-more-link">Learn More</a>
         </div>
-        <div class="what-we-do-item">
+        <div id="design-analysis" class="what-we-do-item searchable" data-title="Design and Analysis">
             <div class="image-overlay">
                 <img src="images/design.jpg" alt="Design and Analysis Icon">
             </div>
@@ -118,7 +121,7 @@
             <p>Detailed design, structural analysis, and innovative solutions for your vessel needs.</p>
             <a href="/design-analysis" class="learn-more-link">Learn More</a>
         </div>
-        <div class="what-we-do-item">
+        <div id="cruise-ship-consulting" class="what-we-do-item searchable" data-title="Cruise Ship Consulting">
             <div class="image-overlay">
                 <img src="images/cruise_ship.jpeg" alt="Cruise Ship Consulting Icon">
             </div>
@@ -126,7 +129,7 @@
             <p>Specialised consulting for cruise ship engineering, compliance, and optimisation.</p>
             <a href="/cruise-ship-consulting" class="learn-more-link">Learn More</a>
         </div>
-        <div class="what-we-do-item">
+        <div id="environmental-sustainability" class="what-we-do-item searchable" data-title="Environmantal Sustainability">
             <div class="image-overlay">
                 <img src="images/wind.jpg" alt="Environmental Sustainability Icon">
             </div>
@@ -181,7 +184,7 @@
         <h2 class="text-center mb-5">Frequently Asked Questions</h2>
         <div class="accordion" id="faqAccordion">
             <!-- FAQ Item 1 -->
-            <div class="accordion-item">
+            <div id="projects" class="accordion-item searchable" data-title="Projects">
                 <h3 class="accordion-header" id="headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
                       data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -190,7 +193,7 @@
                 </h3>
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" 
                     data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
+                    <div id="services" class="accordion-body searchable" data-title="Services">
                         We offer a range of services, including engineering consulting, design and analysis, 
                         cruise ship consulting, and environmental sustainability assessments for marine and offshore projects.
                     </div>
@@ -198,7 +201,7 @@
             </div>
 
             <!-- FAQ Item 2 -->
-            <div class="accordion-item">
+            <div id="consultation" class="accordion-item searchable" data-title="Consultation">
                 <h3 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
                       data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -215,7 +218,7 @@
             </div>
 
             <!-- FAQ Item 3 -->
-            <div class="accordion-item">
+            <div id="impact assessments" class="accordion-item searchable" data-title="Impact Assessments">
                 <h3 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
                       data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -249,7 +252,7 @@
         <h3>Quick Links</h3>
         <ul>
           <li><a href="#what-we-do">What We Do</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#our-services">Services</a></li>
           <li><a href="#contact">Contact Us</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
@@ -334,6 +337,49 @@
   
       form.addEventListener("submit", handleSubmit);
   </script>
+  <!-- Search script -->
+   <script>
+    document.getElementById('search-input').addEventListener('input', function(event) {
+    const query = event.target.value.toLowerCase();
+    const resultsContainer = document.getElementById('dropdown-results');
+    
+    resultsContainer.innerHTML = "";
+    resultsContainer.style.display = "none"; 
+
+    if (query.trim() === "") return; 
+
+    const searchableElements = document.querySelectorAll('.searchable');
+
+    const results = Array.from(searchableElements).filter(element => {
+        const title = element.getAttribute('data-title').toLowerCase();
+        const content = element.innerText.toLowerCase();
+        return title.includes(query) || content.includes(query);
+    });
+
+    if (results.length > 0) {
+        results.forEach(result => {
+            const resultItem = document.createElement('a');
+            resultItem.href = `#${result.id}`; 
+            resultItem.classList.add('dropdown-result-item');
+            resultItem.innerHTML = result.getAttribute('data-title'); 
+            resultsContainer.appendChild(resultItem);
+        });
+        resultsContainer.style.display = "block"; 
+    } else {
+        resultsContainer.innerHTML = "<p class='dropdown-result-item'>No results found</p>";
+        resultsContainer.style.display = "block";
+    }
+});
+
+document.addEventListener('click', function(event) {
+    const resultsContainer = document.getElementById('dropdown-results');
+    if (!resultsContainer.contains(event.target) && event.target !== document.getElementById('search-input')) {
+        resultsContainer.style.display = "none";
+    }
+});
+</script>
+
+
     
 </body>
 </html>
