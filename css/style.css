@@ -658,17 +658,8 @@ footer.footer {
 /* Section Styling */
 .sustainability-section {
   background: linear-gradient(to bottom right, #0077b6, #00a5cf);
-  padding: 60px 0;
   color: #f1f1f1;
   text-align: center;
-}
-
-/* Title Styling */
-.sustainability-section-title {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #f1f1f1;
-  margin-bottom: 20px;
 }
 
 /* Carousel Styling */
