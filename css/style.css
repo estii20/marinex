@@ -194,7 +194,7 @@ h3 {
 /* Our Services Section */
 #our-services {
   padding: 3rem 1rem;
-  background: linear-gradient(135deg, #8aa1b5, #4e81ad);
+  background: linear-gradient(135deg, #033e71, #0b4d86);
   color: #ffffff;
   text-align: center;
 }
@@ -250,7 +250,7 @@ h3 {
 .what-we-do-section {
   padding: 3rem 1rem;
   text-align: center;
-  background: linear-gradient(135deg, #4a83b4, #609ac6);
+  background: linear-gradient(105deg, #0c8bf7, #f2530b);
   color: #ffffff;
 }
 
@@ -553,7 +553,6 @@ footer.footer {
   font-size: 2.5rem;
   color: #0056b3;
   margin-bottom: 2rem;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -610,7 +609,6 @@ footer.footer {
   font-size: 2.5rem;
   color: #005073;
   margin-bottom: 2rem;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -657,60 +655,78 @@ footer.footer {
 
 /* Environmental Sustainability Page */
 
+/* Section Styling */
 .sustainability-section {
-  padding: 3rem 1rem;
-  background: linear-gradient(135deg, #e5f7e5, #c8e6c8);
+  background: linear-gradient(to bottom right, #0077b6, #00a5cf);
+  padding: 60px 0;
+  color: #f1f1f1;
   text-align: center;
 }
 
+/* Title Styling */
 .sustainability-section-title {
-  font-size: 2.5rem;
-  color: #006633;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #f1f1f1;
+  margin-bottom: 20px;
 }
 
-.sustainability-grid {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 1000px;
-  margin: 0 auto;
+/* Carousel Styling */
+.carousel {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
 
-.sustainability-item {
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 600px;
-  padding: 1.5rem;
-  text-align: justify;
+.carousel-item img {
+  border-radius: 8px;
+  opacity: 0.85;
+  transition: opacity 0.5s ease;
 }
 
-.sustainability-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.carousel-item img:hover {
+  opacity: 1;
 }
 
-.sustainability-image-overlay img {
-  width: 100%;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  transition: transform 0.3s ease;
+/* Carousel Caption Styling */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1em;
 }
 
-.sustainability-image:hover {
-  transform: scale(1.05);
+.carousel-caption h5 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #f1f1f1;
 }
 
-.sustainability-content {
-  padding: 20px;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #3d3d3d;
+.carousel-caption p {
+  color: #d1e7f7;
+  font-size: 1em;
 }
+
+/* Indicators and Control Buttons */
+.carousel-indicators button {
+  background-color: #00a5cf;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
 
 /* Design Page */
 
@@ -724,7 +740,6 @@ footer.footer {
   font-size: 2.5rem;
   color: #004080;
   margin-bottom: 2rem;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
