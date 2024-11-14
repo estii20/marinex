@@ -147,7 +147,7 @@
             <!-- Card 4 -->
             <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                 <div class="card shadow-sm h-100">
-                    <img src="images/ship_at_sea.jpg" class="card-img-top" alt="Community engagement">
+                    <img src="images/community.jpg" class="card-img-top" alt="Community engagement">
                     <div class="card-body">
                         <h2 class="sustainability-heading">Engaging Communities</h2>
                         <h3><i class="fa-solid fa-people-roof"></i></h3>
@@ -343,6 +343,27 @@ document.addEventListener('click', function(event) {
     }
 });
 </script>
+<!-- Active Icon Services Section -->
+<script>
+    const currentPage = window.location.pathname.split("/").pop();
+
+    const pageServiceMap = {
+        "engineering-consulting.html": "engineering-consulting",
+        "design-analysis.html": "design-analysis",
+        "cruise-ship-consulting.html": "marine-consultancy",
+        "environmental-sustainability.html": "environmental-sustainability"
+    };
+
+    const currentServiceId = pageServiceMap[currentPage];
+
+    if (currentServiceId) {
+        const currentServiceElement = document.getElementById(currentServiceId);
+        if (currentServiceElement) {
+            currentServiceElement.querySelector(".icon-container").classList.add("active-service");
+        }
+    }
+</script>
+
 
 
     

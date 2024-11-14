@@ -340,8 +340,26 @@ document.addEventListener('click', function(event) {
     }
 });
 </script>
+<!-- Active Icon Services Section -->
+<script>
+    const currentPage = window.location.pathname.split("/").pop();
 
+    const pageServiceMap = {
+        "engineering-consulting.html": "engineering-consulting",
+        "design-analysis.html": "design-analysis",
+        "cruise-ship-consulting.html": "marine-consultancy",
+        "environmental-sustainability.html": "environmental-sustainability"
+    };
 
+    const currentServiceId = pageServiceMap[currentPage];
+
+    if (currentServiceId) {
+        const currentServiceElement = document.getElementById(currentServiceId);
+        if (currentServiceElement) {
+            currentServiceElement.querySelector(".icon-container").classList.add("active-service");
+        }
+    }
+</script>
     
 </body>
 </html>

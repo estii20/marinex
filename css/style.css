@@ -240,6 +240,12 @@ h3 {
   color: #e1ebf5;
 }
 
+.active-service {
+  background-color: #133e87;
+  border-radius: 50%;
+  padding: 10px;
+}
+
 .our-service-item h3 {
   font-size: 1rem;
   color: #e5eff9;
@@ -655,7 +661,8 @@ footer.footer {
 
 /* Environmental Sustainability, Engineering Consulting Page */
 
-.sustainability-section, .engineering-section {
+.sustainability-section, .engineering-section,
+.design-section, .consultancy-section {
   background: linear-gradient(to bottom right, #0077b6, #00a5cf);
   color: #f1f1f1;
   text-align: center;
@@ -678,6 +685,3 @@ footer.footer {
   color: white;
   background-color: #133e87;
 }
-
-/*  Page */
-

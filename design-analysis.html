@@ -96,24 +96,68 @@
     </div>
   </section>
 
-    <!-- Design & Project Analysis Section -->
-    <section id="design-analysis-section" class="design-analysis-section">
-        <h2 class="design-analysis-title">Design & Project Analysis</h2>
-        <div class="design-analysis-grid">
-            <!-- Design Analysis Item Only -->
-            <div id="design-analysis-item" class="design-analysis-item searchable" data-title="Design and Analysis">
-                <div class="design-image-overlay">
-                    <img src="images/design.jpg" alt="Design and Analysis Image" class="design-analysis-image">
-                </div>
-                <div class="design-analysis-content">
-                    <p>We provide thorough structural analysis and design services to meet the 
-                        unique demands of each project. Whether it’s complex offshore installations or coastal 
-                        infrastructure, our designs are grounded in technical excellence and a deep understanding of 
-                        industry standards.</p>
+  <section id="design-services" class="design-section">
+    <div class="d-flex justify-content-center">
+        <!-- Card Row for Design Services Content -->
+        <div class="row justify-content-center mt-5">
+            
+            <!-- Card 1: Concept Development -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/design_concept.jpg" class="card-img-top" alt="Concept development">
+                    <div class="card-body">
+                        <h2 class="design-heading">Concept Development</h2>
+                        <h3><i class="fa-solid fa-pencil-ruler"></i></h3>
+                        <p class="design-text">Our team crafts innovative design concepts, 
+                            blending creativity with functionality to bring your vision to life with 
+                            unique and tailored solutions.</p>
+                    </div>
                 </div>
             </div>
+
+            <!-- Card 2: Sustainable Design -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/sustainable_design.jpg" class="card-img-top" alt="Sustainable design">
+                    <div class="card-body">
+                        <h2 class="design-heading">Sustainable Design</h2>
+                        <h3><i class="fa-solid fa-seedling"></i></h3>
+                        <p class="design-text">We prioritise sustainable materials and eco-friendly 
+                            processes to create designs that are not only beautiful but also responsible and enduring.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: User-Centric Design -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/user_centric.jpg" class="card-img-top" alt="User-centric design">
+                    <div class="card-body">
+                        <h2 class="design-heading">User-Centric Design</h2>
+                        <h3><i class="fa-solid fa-users"></i></h3>
+                        <p class="design-text">We focus on creating intuitive and accessible designs 
+                            that enhance user experience, ensuring that every interaction is seamless and engaging.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Aesthetic & Functional Balance -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/aesthetic_functional.jpg" class="card-img-top" alt="Aesthetic and functional balance">
+                    <div class="card-body">
+                        <h2 class="design-heading">Aesthetic & Functional Balance</h2>
+                        <h3><i class="fa-solid fa-balance-scale"></i></h3>
+                        <p class="design-text">We strike a balance between aesthetics and functionality, 
+                            crafting designs that are visually stunning while remaining practical and effective.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
+
 
 
   <!-- Contact Section-->
@@ -295,6 +339,26 @@ document.addEventListener('click', function(event) {
         resultsContainer.style.display = "none";
     }
 });
+</script>
+<!-- Active Icon Services Section -->
+<script>
+    const currentPage = window.location.pathname.split("/").pop();
+
+    const pageServiceMap = {
+        "engineering-consulting.html": "engineering-consulting",
+        "design-analysis.html": "design-analysis",
+        "cruise-ship-consulting.html": "marine-consultancy",
+        "environmental-sustainability.html": "environmental-sustainability"
+    };
+
+    const currentServiceId = pageServiceMap[currentPage];
+
+    if (currentServiceId) {
+        const currentServiceElement = document.getElementById(currentServiceId);
+        if (currentServiceElement) {
+            currentServiceElement.querySelector(".icon-container").classList.add("active-service");
+        }
+    }
 </script>
 
 

@@ -96,69 +96,68 @@
     </div>
   </section>
 
-  <!-- Cruise Ship & Marine Consulting Section -->
-    <section id="cruise-marine-consulting" class="cruise-consulting-section">
-        <h2 class="cruise-section-title">Cruise Ship & Marine Consulting</h2>
-        <div class="cruise-consulting-grid">
-            <!-- Cruise Ship Consulting Item Only -->
-            <div id="marine-consulting-item" class="marine-consulting-item searchable" data-title="Cruise Ship Consulting">
-                <div class="cruise-image-overlay">
-                    <img src="images/cruise_ship.jpeg" alt="Cruise Ship Consulting Image" class="cruise-image">
-                </div>
-                <div class="cruise-content">
-                    <p><strong>Specialised Solutions:</strong> Consulting for cruise ship engineering, compliance, 
-                        and optimization. Every project is unique, and so are our solutions. We collaborate closely 
-                        with you to understand your needs, delivering custom engineering solutions that solve 
-                        complex challenges, enhance performance, and support long-term goals.</p>
-                    <p>With years of industry experience, we’re more than just consultants—we’re partners in your success. 
-                        Our client-centered approach, technical rigor, and focus on sustainability set us apart 
-                        in the engineering consultancy landscape. We deliver value at every stage, ensuring your 
-                        project’s goals are met with excellence.</p>
-                    <p><strong>Let’s bring your vision to life.</strong> Get in touch today to learn more about 
-                        how our engineering consultancy services can support your next project.</p>
+  <section id="marine-consultancy" class="consultancy-section">
+    <div class="d-flex justify-content-center">
+        <!-- Card Row for Marine Services Content -->
+        <div class="row justify-content-center mt-5">
+            
+            <!-- Card 1: Maritime Safety & Compliance -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/safety.jpg" class="card-img-top" alt="Maritime safety and compliance">
+                    <div class="card-body">
+                        <h3 class="consultancy-heading">Maritime Safety & Compliance</h3>
+                        <h4><i class="fa-solid fa-anchor"></i></h4>
+                        <p class="consultancy-text">We provide expert guidance on maritime safety standards, 
+                           ensuring your vessels meet the highest safety and compliance benchmarks, 
+                           including international maritime regulations.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-  <!-- Contact Section-->
-  <section id="contact" class="contact-section">
-    <div class="container mt-5 contact-content">
-        <h2 class="text-center text-white mb-5 section-title">Contact Us</h2>
-
-        <div class="row justify-content-center">
-            <!-- Form Section -->
-            <div class="col-lg-6 contact-form">
-                <form action="https://formspree.io/f/mzbnqnyk" id="my-form" method="POST" enctype="multipart/form-data">
-                    <div class="input-group mb-4">
-                        <span class="input-group-text"><i class="fas fa-user"></i></span>
-                        <input type="text" name="name" class="form-control form-control-lg" placeholder="Your Name" required>
+            <!-- Card 2: Environmental Impact & Sustainability -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/sustainable_shipping.jpg" class="card-img-top" alt="Environmental impact and sustainability">
+                    <div class="card-body">
+                        <h3 class="consultancy-heading">Environmental Impact & Sustainability</h3>
+                        <h4><i class="fa-solid fa-leaf"></i></h4>
+                        <p class="consultancy-text">Our assessments and strategies help minimise environmental impacts, 
+                           supporting eco-friendly operations and sustainable marine practices to protect ocean ecosystems.</p>
                     </div>
-                    <div class="input-group mb-4">
-                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                    </div>
-                    <div class="input-group mb-4">
-                        <span class="input-group-text"><i class="fas fa-tag"></i></span>
-                        <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                    </div>
-                    <div class="input-group mb-4">
-                        <span class="input-group-text"><i class="fas fa-comment-dots"></i></span>
-                        <textarea class="form-control" rows="5" id="comment" name="message" 
-                          placeholder="Project Details" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block custom-btn">Send Message</button>
-                </form>
-                <div id="my-form-status" class="mt-3 text-center"></div>
+                </div>
             </div>
 
-            <!-- Decorative Image Section -->
-            <div class="col-lg-6 text-center contact-image">
-                <img src="images/contact.png" class="img-fluid rounded-circle" alt="Contact Image">
+            <!-- Card 3: Operational Efficiency Consulting -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/operational_efficiency.jpeg" class="card-img-top" alt="Operational efficiency consulting">
+                    <div class="card-body">
+                        <h3 class="consultancy-heading">Operational Efficiency Consulting</h3>
+                        <h4><i class="fa-solid fa-ship"></i></h4>
+                        <p class="consultancy-text">We help streamline vessel operations for optimal performance, 
+                           reducing fuel consumption, enhancing route efficiency, and minimising operational costs.</p>
+                    </div>
+                </div>
             </div>
+
+            <!-- Card 4: Cruise Ship Design & Engineering Support -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/cruise_ship_design.jpeg" class="card-img-top" alt="Cruise ship design and engineering support">
+                    <div class="card-body">
+                        <h3 class="consultancy-heading">Cruise Ship Design & Engineering Support</h3>
+                        <h4><i class="fa-solid fa-pencil-ruler"></i></h4>
+                        <p class="consultancy-text">From initial design to final engineering, we assist in creating 
+                           vessels that balance luxury and functionality, providing a top-tier guest experience at sea.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-  </section>
+</section>
+
 
 <!-- Footer Section -->
 <footer class="footer">
@@ -300,6 +299,26 @@ document.addEventListener('click', function(event) {
         resultsContainer.style.display = "none";
     }
 });
+</script>
+<!-- Active Icon Services Section -->
+<script>
+    const currentPage = window.location.pathname.split("/").pop();
+
+    const pageServiceMap = {
+        "engineering-consulting.html": "engineering-consulting",
+        "design-analysis.html": "design-analysis",
+        "cruise-ship-consulting.html": "marine-consultancy",
+        "environmental-sustainability.html": "environmental-sustainability"
+    };
+
+    const currentServiceId = pageServiceMap[currentPage];
+
+    if (currentServiceId) {
+        const currentServiceElement = document.getElementById(currentServiceId);
+        if (currentServiceElement) {
+            currentServiceElement.querySelector(".icon-container").classList.add("active-service");
+        }
+    }
 </script>
 
 
