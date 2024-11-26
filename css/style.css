@@ -191,7 +191,104 @@ h3 {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Our Services Section */
+/* Service Section */
+#our-services {
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #033e71, #0b4d86);
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Section Title */
+#our-services h2 {
+  font-size: 2.5rem;
+  color: #e1ebf5;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+/* Services Grid */
+.our-services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Space between items */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Service Items: Rounded Squares */
+.our-service-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px; /* Rounded corners */
+  height: 180px;
+  width: 180px;
+  display: flex;
+  align-items: flex-end; /* Text at the bottom */
+  justify-content: center;
+  text-decoration: none; /* Remove link styles */
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effects */
+.our-service-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Text Container */
+.text-container {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 90%; /* Fit within the rounded square */
+  margin-bottom: 1rem;
+}
+
+.text-container i {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #e1ebf5;
+}
+
+.text-container h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Slight shadow for readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .our-service-item {
+    height: 150px;
+    width: 150px;
+  }
+
+  .text-container {
+    width: 95%;
+    padding: 0.4rem;
+  }
+
+  .text-container i {
+    font-size: 1.2rem;
+  }
+
+  .text-container h3 {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Our Services Section 
 #our-services {
   padding: 3rem 1rem;
   background: linear-gradient(135deg, #033e71, #0b4d86);
