@@ -165,7 +165,6 @@ h3 {
 .hero-text p:hover {
     transform: scale(1.05); 
 }
-
   
 .hero-text button {
     border: none;
@@ -192,6 +191,7 @@ h3 {
 }
 
 /* Service Section */
+
 #our-services {
   padding: 3rem 1rem;
   background: linear-gradient(135deg, #033e71, #0b4d86);
@@ -209,151 +209,72 @@ h3 {
 
 /* Services Grid */
 .our-services-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem; /* Space between items */
+  display: grid;
+  gap: 1.5rem; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
-/* Service Items: Rounded Squares */
+/* Service Tile */
 .our-service-item {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 16px; /* Rounded corners */
-  height: 180px;
-  width: 180px;
+  height: 200px;
+  border-radius: 8px; 
   display: flex;
-  align-items: flex-end; /* Text at the bottom */
-  justify-content: center;
-  text-decoration: none; /* Remove link styles */
+  align-items: center; 
+  justify-content: center; 
+  text-decoration: none; 
   color: #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Effects */
+/* Tile Hover Effects */
 .our-service-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Text Container */
-.text-container {
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
-  padding: 0.5rem;
-  border-radius: 8px;
+/* Content Inside Tiles */
+.our-service-item .content {
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 1rem;
   text-align: center;
-  width: 90%; /* Fit within the rounded square */
-  margin-bottom: 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  width: 150px;
+  height: 120px;
 }
 
-.text-container i {
-  font-size: 1.5rem;
+.our-service-item:hover .content {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.our-service-item i {
+  font-size: 2rem;
   margin-bottom: 0.5rem;
   display: block;
   color: #e1ebf5;
 }
 
-.text-container h3 {
-  font-size: 1rem;
-  margin: 0;
-  color: #ffffff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Slight shadow for readability */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .our-service-item {
-    height: 150px;
-    width: 150px;
-  }
-
-  .text-container {
-    width: 95%;
-    padding: 0.4rem;
-  }
-
-  .text-container i {
-    font-size: 1.2rem;
-  }
-
-  .text-container h3 {
-    font-size: 0.9rem;
-  }
-}
-
-
-/* Our Services Section 
-#our-services {
-  padding: 3rem 1rem;
-  background: linear-gradient(135deg, #033e71, #0b4d86);
-  color: #ffffff;
-  text-align: center;
-}
-
-#our-services h2 {
-  font-size: 2.5rem;
-  color: #e1ebf5;
-  letter-spacing: 1px;
-  margin-bottom: 2rem;
-}
-
-.our-services-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.our-service-item {
-  background-color: #6aaedf;
-  border-radius: 50%; 
-  padding: 2rem;
-  height: 150px;
-  width: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.our-service-item:hover {
-  transform: translateY(-5px);
-}
-
-.icon-container {
-  font-size: 2rem;
-  color: #e1ebf5;
-}
-
-.active-service {
-  background-color: #133e87;
-  border-radius: 50%;
-  padding: 10px;
-}
-
 .our-service-item h3 {
-  font-size: 1rem;
-  color: #e5eff9;
-  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
 }
 
 /* What We Do Section */
 .what-we-do-section {
   padding: 3rem 1rem;
   text-align: center;
-  background: linear-gradient(105deg, #0c8bf7, #f2530b);
+  background: linear-gradient(105deg, #133e87, #333);
   color: #ffffff;
 }
 
@@ -373,7 +294,7 @@ h3 {
 }
 
 .what-we-do-item {
-  background-color: #6aaedf;
+  background-color: #0e619d;
   border-radius: 10px;
   overflow: hidden;
   padding: 1.5rem;
@@ -461,6 +382,7 @@ h3 {
   position: relative;
   display: inline-block;
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .section-title::after {
@@ -524,7 +446,6 @@ h3 {
 }
 
 /* FAQ Section Styling */
-
 .faq-section {
   background-color: #cbdceb !important;
   padding: 10px 0;
@@ -645,7 +566,6 @@ footer.footer {
 }
 
 /* Engineering Page */
-  
 .engineering-consulting-section {
   padding: 3rem 1rem;
   background: linear-gradient(135deg, #f3f9ff, #e0efff);
@@ -701,7 +621,6 @@ footer.footer {
 }
 
 /* Cruise Engineering Page */
-
 .cruise-consulting-section {
   padding: 3rem 1rem;
   background: linear-gradient(135deg, #eef7ff, #cfe0ff);
@@ -757,10 +676,9 @@ footer.footer {
 }
 
 /* Environmental Sustainability, Engineering Consulting Page */
-
 .sustainability-section, .engineering-section,
 .design-section, .consultancy-section {
-  background: linear-gradient(to bottom right, #0077b6, #00a5cf);
+  background: linear-gradient(105deg, #133e87, #333);
   color: #f1f1f1;
   text-align: center;
 }
@@ -781,4 +699,23 @@ footer.footer {
   border: none;
   color: white;
   background-color: #133e87;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #our-services h2 {
+    font-size: 2rem;
+  }
+
+  .our-service-item {
+    height: 180px;
+  }
+
+  .our-service-item i {
+    font-size: 1.5rem;
+  }
+
+  .our-service-item h3 {
+    font-size: 1rem;
+  }
 }
