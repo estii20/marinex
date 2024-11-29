@@ -249,7 +249,7 @@ h3 {
   border-radius: 8px;
   transition: background 0.3s ease;
   width: 150px;
-  height: 120px;
+  height: 130px;
 }
 
 .our-service-item:hover .content {
@@ -268,6 +268,16 @@ h3 {
   color: #ffffff;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   margin: 0;
+}
+
+/* Service Tile Active State */
+.our-service-item.active {
+  border: 2px solid #FFD700; 
+  transform: scale(1.05); 
+}
+
+.our-service-item.active .content {
+  background: rgba(0, 0, 0, 0.8); 
 }
 
 /* What We Do Section */

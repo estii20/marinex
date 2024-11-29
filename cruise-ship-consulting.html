@@ -57,46 +57,47 @@
   </nav>
 
     <!-- Services Section -->
-    <section id="our-services" class="our-services-section">
-        <h2 class="section-title">Our Services</h2>
-        <div class="our-services-grid">
-            <!-- Service Tile 1 -->
-            <a href="engineering-consulting.html" id="engineering-consulting" class="our-service-item"
-                style="background-image: url('images/control_room.jpg');">
-                <div class="content">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Engineering Solutions</h3>
-                </div>
-            </a>
-    
-            <!-- Service Tile 2 -->
-            <a href="design-analysis.html" id="design-analysis" class="our-service-item"
-                style="background-image: url('images/design_concept.jpg');">
-                <div class="content">
-                    <i class="fas fa-drafting-compass"></i>
-                    <h3>Custom <br>Design</h3>
-                </div>
-            </a>
-    
-            <!-- Service Tile 3 -->
-            <a href="cruise-ship-consulting.html" id="marine-consultancy" class="our-service-item"
-                style="background-image: url('images/large_engine.jpg');">
-                <div class="content">
-                    <i class="fas fa-anchor"></i>
-                    <h3>Marine & Cruise Consultancy</h3>
-                </div>
-            </a>
-    
-            <!-- Service Tile 4 -->
-            <a href="environmental-sustainability.html" id="environmental-sustainability" class="our-service-item"
-                style="background-image: url('images/ship_at_sea.jpg');">
-                <div class="content">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Environmental Impact</h3>
-                </div>
-            </a>
-        </div>
-    </section>
+<section id="our-services" class="our-services-section">
+    <h2 class="section-title">Our Services</h2>
+    <div class="our-services-grid">
+        <!-- Service Tile 1 -->
+        <a href="engineering-consulting.html" id="engineering-consulting" class="our-service-item" 
+            style="background-image: url('images/control_room.jpg');" data-service="engineering-consulting">
+            <div class="content">
+                <i class="fas fa-cogs"></i>
+                <h3>Marine Engineering</h3>
+            </div>
+        </a>
+
+        <!-- Service Tile 2 -->
+        <a href="design-analysis.html" id="design-analysis" class="our-service-item" 
+            style="background-image: url('images/design_concept.jpg');" data-service="design-analysis">
+            <div class="content">
+                <i class="fas fa-drafting-compass"></i>
+                <h3>Custom <br>Design</h3>
+            </div>
+        </a>
+
+        <!-- Service Tile 3 -->
+        <a href="cruise-ship-consulting.html" id="marine-consultancy" class="our-service-item" 
+            style="background-image: url('images/large_engine.jpg');" data-service="cruise-ship-consulting">
+            <div class="content">
+                <i class="fas fa-anchor"></i>
+                <h3>Marine & Cruise Consultancy</h3>
+            </div>
+        </a>
+
+        <!-- Service Tile 4 -->
+        <a href="environmental-sustainability.html" id="environmental-sustainability" class="our-service-item" 
+            style="background-image: url('images/ship_at_sea.jpg');" data-service="environmental-sustainability">
+            <div class="content">
+                <i class="fas fa-leaf"></i>
+                <h3>Environmental Impact</h3>
+            </div>
+        </a>
+    </div>
+</section>
+
 
   <section id="marine-consultancy" class="consultancy-section">
     <h2 class="section-title text-white">Cruise Ship & Marine Consulting</h2>
@@ -344,23 +345,18 @@ document.addEventListener('click', function(event) {
 </script>
 <!-- Active Icon Services Section -->
 <script>
-    const currentPage = window.location.pathname.split("/").pop();
+    window.addEventListener('DOMContentLoaded', (event) => {
+  const currentPage = window.location.pathname.split('/').pop();
 
-    const pageServiceMap = {
-        "engineering-consulting.html": "engineering-consulting",
-        "design-analysis.html": "design-analysis",
-        "cruise-ship-consulting.html": "marine-consultancy",
-        "environmental-sustainability.html": "environmental-sustainability"
-    };
+  const serviceItems = document.querySelectorAll('.our-service-item');
 
-    const currentServiceId = pageServiceMap[currentPage];
-
-    if (currentServiceId) {
-        const currentServiceElement = document.getElementById(currentServiceId);
-        if (currentServiceElement) {
-            currentServiceElement.querySelector(".icon-container").classList.add("active-service");
-        }
+  serviceItems.forEach(item => {
+    const serviceId = item.getAttribute('data-service');
+    if (currentPage === `${serviceId}.html`) {
+      item.classList.add('active');
     }
+  });
+});
 </script>
 
 
