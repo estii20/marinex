@@ -185,3 +185,23 @@ Bootstrap cards, with images relevant to the service offered. Contrasting Dark B
   - Sustainability
 
   ![Marinex](documentation/environmental.png "Environmental Section")
+
+## Future Features
+
+Interactive Tools: Add interactive tools or calculators that help users estimate the cost savings, environmental impact, or energy reduction for marine projects. These tools can engage users and provide valuable insights.
+
+## Testing
+
+Browser Compatibility PASSED
+
+Browser Compatibility checks were run using BrowserStack and my computer. The results are:
+
+Firefox - ☑
+
+Chrome - ☑
+
+Opera - ☑
+
+Microsoft Edge - ☑
+
+Safari - ☑
