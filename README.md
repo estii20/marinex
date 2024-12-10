@@ -205,3 +205,41 @@ Opera - ☑
 Microsoft Edge - ☑
 
 Safari - ☑
+
+## Languages Used
+
+- HTML5
+- CSS3
+
+## Frameworks, Libraries and Programs Used
+
+- [Google Fonts](https://fonts.google.com/) used for the Montserrat font.
+- [Font Awesome](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
+- [Git](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
+- [GitHub](https://github.com/)  is used as the repository for the project code after being pushed from Git.
+- [Bootstrap](https://getbootstrap.com/) was used to build responsive web pages
+Python Imaging Library used for image handling
+- [Balsamiq](https://balsamiq.com/) was used to create the wireframes during the design process.
+- [Codeanywhere](https://app.codeanywhere.com/) IDE for the project.
+- [GitPod](https://gitpod.io/) IDE used to complete the project.
+
+## Technologies Used
+
+# Resources
+
+[Bootstrap 5 documentation](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+
+[Favicon](https://favicon.io/) to generate the favicon.
+
+[Looka](https://looka.com/editor/165286831) to create business logo.
+
+
+## Deployment and Publishing
+
+- Forking and Cloning
+To work on your own copy of the code, follow these steps for forking and cloning via GitHub:
+In the repository, locate the 'Fork' button at the top right-hand side, adjacent to 'Star'. Click on it to create a new repository, forked from the original.
+
+- To clone the repository, you have two options:
+Within the repository, click on the 'Code' dropdown located next to 'Add File' on the right (underneath the Settings tab). From there, choose the option to download all files and save a local copy.
+Alternatively, within the same 'Code' dropdown, opt to open the code with GitHub Desktop and proceed with your work from there.
