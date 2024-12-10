@@ -711,6 +711,23 @@ footer.footer {
   background-color: #133e87;
 }
 
+/* 404 Error Page */
+
+.error-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.error-code {
+  font-size: 120px;
+  color: #dc3545;
+}
+
+.error-message {
+  font-size: 24px;
+  color: #343a40;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   #our-services h2 {
