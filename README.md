@@ -11,7 +11,6 @@ An international Cruise Ship and Marine Engineering Consultant. Full project man
 ## Table of contents
 
 - [UX Design](#ux-design)
-- [User Stories](#user-stories)
 - [Features](#features)
 - [Future Features](#future-features)
 - [Testing](#testing)
