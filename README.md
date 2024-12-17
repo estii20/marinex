@@ -206,6 +206,34 @@ Microsoft Edge - ☑
 
 Safari - ☑
 
+__Accessibility Testing__
+
+From using Lighthouse I was able to check the accessibility and SEO of the website. 
+
+By utilising this in DevTools I was able to generate reports for both desktop and mobile. By analysing these reports I was able to make alterations in both the HTML and CSS code to improve the accessibility of the application.
+
+Below are the reports.
+
+- Homepage
+
+![Ekotera](documentation/lighthouse_index.png " Lighthouse Homepage")
+
+- Engineering Page
+
+![Ekotera](documentation/lighthouse_engineering.png " Lighthouse Engineering Page")
+
+- Design Page
+
+![Ekotera](documentation/lighthouse_design.png " Lighthouse Homepage")
+
+- Marine and Cruise Consulting Page
+
+![Ekotera](documentation/lighthouse_cruise.png " Lighthouse Homepage")
+
+- Environmental Page
+
+![Ekotera](documentation/lighthouse_environmental.png " Lighthouse Homepage")
+
 ## Languages Used
 
 - HTML5
@@ -243,3 +271,36 @@ In the repository, locate the 'Fork' button at the top right-hand side, adjacent
 - To clone the repository, you have two options:
 Within the repository, click on the 'Code' dropdown located next to 'Add File' on the right (underneath the Settings tab). From there, choose the option to download all files and save a local copy.
 Alternatively, within the same 'Code' dropdown, opt to open the code with GitHub Desktop and proceed with your work from there.
+
+## Resources
+
+__Media__
+
+[Unsplash](Unsplash.com) 
+- Photo by Nico Smit on Unsplash
+- Photo by Steve Davison on Unsplash
+- Photo by iSawRed on Unsplash
+- Photo by iSawRed on Unsplash
+- Photo by Nighthawk Shoots on Unsplash
+- Photo by ThisisEngineering on Unsplash
+- Photo by Jon Tyson on Unsplash
+- Photo by NOAA on Unsplash
+- Photo by NOAA on Unsplash
+- Photo by Nicholas Doherty on Unsplash
+- Photo by Zetong Li on Unsplash
+- Photo by Ryan Ancill on Unsplash
+- Photo by Alvaro Reyes on Unsplash
+- Photo by Headway on Unsplash
+- Photo by Benoît Deschasaux on Unsplash
+- Photo by Sarah Dorweiler on Unsplash
+- Photo by Jametlene Reskp on Unsplash
+
+All other images courtesy of Marinex Marine Consulting.
+
+## Credits
+
+Assistance from Code Institute's Template
+
+## Acknowledgements
+
+Sincere thanks to Marinex for supplying the copy and technical images for the website.
