@@ -225,7 +225,7 @@ Python Imaging Library used for image handling
 
 ## Technologies Used
 
-# Resources
+### Resources
 
 [Bootstrap 5 documentation](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 
