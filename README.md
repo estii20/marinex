@@ -1,8 +1,8 @@
-# Ekotera
+# Marinex
 
 [Live Site](https://estii20.github.io/marinex/index.html)
 
-A solar carport business providing a full installation service for corporate clients across Europe.
+An international Cruise Ship and Marine Engineering Consultant. Full project management throughout the world, involved in all aspects of the design, environmental solutions and newbuild/retrofit for cruise ship and marine projects.
 
 [Website Mock-up](https://ui.dev/amiresponsive?url=https://estii20.github.io/marinex/index.html)
 
