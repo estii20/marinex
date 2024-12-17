@@ -69,6 +69,11 @@ Clear feedback on hover and clicks for buttons and links.
 Call-to-action buttons on every service page to encourage user engagement.
 These criteria were implemented to create a user-friendly, professional, and accessible website that meets the needs of both the client and end users.
 
+### Figma Design
+[Marinex Figma Design](https://www.figma.com/design/t48owcf0lzTuYYnOr9jZ7a/Marinex?node-id=0-1&p=f&t=b6qP02lHoISWfZsa-0 "Link to Figma Design")
+
+![Figma Mobile Design](documentation/figma.png "Image of the colour palette")
+
 ## Features
 
 Below are descriptions of the main features of the application. 
@@ -260,6 +265,8 @@ Python Imaging Library used for image handling
 [Favicon](https://favicon.io/) to generate the favicon.
 
 [Looka](https://looka.com/editor/165286831) to create business logo.
+
+[Figma](https://www.figma.com/) to plan the layout and visual of the website to show the client pre-production.
 
 
 ## Deployment and Publishing
